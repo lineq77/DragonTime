@@ -1,0 +1,14 @@
+{% extends 'time_messages/layout.html'%}
+
+{% block title  %}Лет{% endblock %}
+
+
+{% block content %}
+{% load static %}
+<img src="{% static 'time_messages/images/years.jpg' %}" alt="snowmen" class="snowmen">
+<main>
+  <div class="features">
+     <h2>Мы вместе более: {{ years }} лет</h2>
+  </div>
+</main>
+{% endblock %}

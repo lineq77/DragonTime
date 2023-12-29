@@ -1,0 +1,14 @@
+{% extends 'time_messages/layout.html'%}
+
+{% block title  %}Секунд{% endblock %}
+
+
+{% block content %}
+{% load static %}
+<img src="{% static 'time_messages/images/seconds.jpg' %}" alt="snowmen" class="snowmen">
+<main>
+  <div class="features">
+     <h2>Мы вместе более: {{ total_seconds }} секунд</h2>
+  </div>
+</main>
+{% endblock %}
