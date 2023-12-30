@@ -1,0 +1,85 @@
+/* Устанавливает фоновое изображение для всего тела страницы. Изображение покрывает всю область и центрируется. */
+body {
+  background: white url("images/summer.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Стили для элемента aside. Элемент aside плавающий слева, имеет зеленый фон, ширину 20% от родительского элемента, отступы 2.5% от всех сторон, высоту равную высоте окна просмотра, белый цвет текста и границу внизу. */
+aside {
+   float: left;
+   background: #4F715D;
+   width: 15%;
+   padding: 2.5%;
+   height: 100vh;
+   color: #fff;
+   border-height 10px solid #848C88;
+}
+
+/* Стили для изображения внутри элемента aside. Изображение имеет ширину 80px и плавает слева. */
+.dragon {
+   width: 80px;
+   float: left;
+}
+
+/* Стили для класса .logo внутри элемента aside. Класс .logo имеет размер шрифта 40px, отступ слева 10px, жирный шрифт, относительное позиционирование, смещение сверху на 15px и смещение слева на 15%. */
+aside .logo {
+   font-size: 40px;
+   margin-left: 10px;
+   font-weight: bold;
+   position: relative;
+   top: 15px;
+}
+
+/* Стили для заголовка h3 внутри элемента aside. Заголовок имеет отступ сверху 50px и размер шрифта 28px. */
+aside h3 {
+   margin-top: 50px;
+   font-size: 28px;
+}
+
+/* Убирает маркеры списка у элементов списка внутри элемента aside. */
+aside ul {list-style: none}
+
+/* Стили для элементов списка внутри элемента aside. Элементы списка имеют белый цвет, отображаются как блочные элементы, отступ сверху 20px и плавное переходное изменение всех свойств при наведении. */
+aside ul li {
+  color: #fff;
+  display: block;
+  margin-top: 15px;
+  transition: transform .3s ease;
+}
+
+/* Стили для элементов списка и ссылок при наведении внутри элемента aside. Элементы списка и ссылки при наведении имеют красный цвет, нет подчеркивания и масштабируются на 5%. */
+aside ul li:hover, aside ul a:hover {
+  color: white;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+/*  задает отступ справа */
+.fa-solid {
+   margin-right: 10px;
+}
+
+aside a {
+ color: white;
+}
+
+main .features {
+    float: left;
+    color: black;
+    position: absolute;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.snowmen {
+  width: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

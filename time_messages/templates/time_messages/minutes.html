@@ -1,0 +1,14 @@
+{% extends 'time_messages/layout.html'%}
+
+{% block title  %}Минут{% endblock %}
+
+
+{% block content %}
+{% load static %}
+<img src="{% static 'time_messages/images/minutes.jpg' %}" alt="snowmen" class="snowmen">
+<main>
+  <div class="features">
+     <h2>Мы вместе более: {{ total_minutes }} минут</h2>
+  </div>
+</main>
+{% endblock %}
